@@ -1,0 +1,19 @@
+.menu{
+    li{
+        font-size: 30px;
+        a{
+            color: red;
+            // & 為連結詞，可連結上一層結構
+            &:hover{
+                color: blue;
+            }
+        }
+    }
+    h3{
+        line-height: 1;
+    }
+    h4{
+        font-size: 30px;
+        color: red;
+    }
+}
