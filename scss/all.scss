@@ -1,23 +1,27 @@
-$link-color: #ff0000;
-$font-l: 18px;
-// $自訂變數名稱：變數;
+// 載入 _variable.scss
+@import "variable";
 
-.menu{
-    li{
+body {
+    font-family: $font-family-base;
+}
+
+.menu {
+    li {
         font-size: 30px;
-        a{
+        a {
             color: $link-color;
-            // & 為連結詞，可連結上一層結構
-            &:hover{
+            font-size: $font-s;
+            &:hover {
+                // & 為連結詞，可連結上一層結構
                 color: blue;
             }
         }
     }
-    h3{
+    h3 {
         line-height: 1;
     }
-    h4{
-        font-size: 30px;
+    h4 {
+        font-size: $font-xl;
         color: $link-color;
     }
 }
@@ -26,4 +30,26 @@ $font-l: 18px;
     h1 {
         font-size: $font-l;
     }
+}
+
+.content {
+    h2 {
+        font-family: $font-family-title;
+    }
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+}
+
+.box1 {
+    background: $base-color;
+}
+.box2 {
+    background: darken($base-color, 20%);
+}
+.box2 {
+    background: lighten($base-color, 30%);
 }

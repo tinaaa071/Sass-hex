@@ -1,8 +1,13 @@
+body {
+  font-family: "Helvetica,Arial,sans-serif";
+}
+
 .menu li {
   font-size: 30px;
 }
 .menu li a {
   color: #ff0000;
+  font-size: 13px;
 }
 .menu li a:hover {
   color: blue;
@@ -11,10 +16,32 @@
   line-height: 1;
 }
 .menu h4 {
-  font-size: 30px;
+  font-size: 36px;
   color: #ff0000;
 }
 
 .header h1 {
   font-size: 18px;
-}/*# sourceMappingURL=all.css.map */
+}
+
+.content h2 {
+  font-family: "monospace";
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  margin: 20px;
+}
+
+.box1 {
+  background: #008000;
+}
+
+.box2 {
+  background: #001a00;
+}
+
+.box2 {
+  background: #1aff1a;
+}
