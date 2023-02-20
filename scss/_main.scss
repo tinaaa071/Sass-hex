@@ -23,8 +23,15 @@ body {
     }
 }
 
+@mixin blueSize {
+    color: blue;
+    font-size: 13px;
+}
+
 .header {
     h1 {
+        @include blueSize;
+        // 使用 @include 呼叫 @mixin
         font-size: $font-l;
     }
 }

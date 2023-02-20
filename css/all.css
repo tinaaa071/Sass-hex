@@ -334,6 +334,8 @@ body {
 }
 
 .header h1 {
+  color: blue;
+  font-size: 13px;
   font-size: 18px;
 }
 
