@@ -16,5 +16,8 @@
   "scripts": {
     "changelog": "conventional-changelog -i CHANGELOG.md -s",
     "release": "standard-version"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1"
   }
 }
