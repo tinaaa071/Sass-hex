@@ -2,7 +2,7 @@
   font-size: 30px;
 }
 .menu li a {
-  color: red;
+  color: #ff0000;
 }
 .menu li a:hover {
   color: blue;
@@ -12,5 +12,9 @@
 }
 .menu h4 {
   font-size: 30px;
-  color: red;
+  color: #ff0000;
+}
+
+.header h1 {
+  font-size: 18px;
 }/*# sourceMappingURL=all.css.map */

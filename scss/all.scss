@@ -1,8 +1,12 @@
+$link-color: #ff0000;
+$font-l: 18px;
+// $自訂變數名稱：變數;
+
 .menu{
     li{
         font-size: 30px;
         a{
-            color: red;
+            color: $link-color;
             // & 為連結詞，可連結上一層結構
             &:hover{
                 color: blue;
@@ -14,6 +18,12 @@
     }
     h4{
         font-size: 30px;
-        color: red;
+        color: $link-color;
+    }
+}
+
+.header {
+    h1 {
+        font-size: $font-l;
     }
 }
