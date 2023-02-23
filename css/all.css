@@ -311,6 +311,19 @@ template {
   display: none;
 }
 
+a {
+  color: red;
+}
+
+a:hover {
+  color: blue;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 body {
   font-family: "Helvetica,Arial,sans-serif";
 }
