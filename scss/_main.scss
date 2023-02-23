@@ -23,16 +23,30 @@ body {
     }
 }
 
-@mixin blueSize {
-    color: blue;
-    font-size: 13px;
-}
-
 .header {
     h1 {
         @include blueSize;
         // 使用 @include 呼叫 @mixin
+        @include hide-text;
         font-size: $font-l;
+    }
+}
+// 響應式
+.header {
+    width: 500px;
+    @include pad {
+        font-size: 15px;
+        width: 13px;
+    }
+    @include mobile {
+        font-size: 13px;
+    }
+    a {
+        background: #000;
+        @include mobile {
+            // 手機版背景變白色
+            background: #fff;
+        }
     }
 }
 
@@ -50,10 +64,17 @@ body {
 
 .box1 {
     background: $base-color;
+    @include color(pink, 16px);
+    // color(pink) 的數值會帶回 @mixin 內之 ($color)
 }
 .box2 {
     background: darken($base-color, 20%);
+    @include color(purple, 20px);
+    // 可使用同一套 @mixin 帶入不同數值
 }
 .box2 {
     background: lighten($base-color, 30%);
+}
+.box3 {
+    @include circle(60px, yellow)
 }

@@ -336,7 +336,33 @@ body {
 .header h1 {
   color: blue;
   font-size: 13px;
+  text-indent: 110%;
+  white-space: nowrap;
+  overflow: hidden;
   font-size: 18px;
+}
+
+.header {
+  width: 500px;
+}
+@media (max-width: 768px) {
+  .header {
+    font-size: 15px;
+    width: 13px;
+  }
+}
+@media (max-width: 568px) {
+  .header {
+    font-size: 13px;
+  }
+}
+.header a {
+  background: #000;
+}
+@media (max-width: 568px) {
+  .header a {
+    background: #fff;
+  }
 }
 
 .content h2 {
@@ -351,12 +377,39 @@ body {
 
 .box1 {
   background: #008000;
+  color: pink;
+  border: 5px solid pink;
+  -webkit-text-decoration: pink;
+          text-decoration: pink;
+  font-size: 24px;
 }
 
 .box2 {
   background: #001a00;
+  color: purple;
+  border: 5px solid purple;
+  -webkit-text-decoration: purple;
+          text-decoration: purple;
+  font-size: 30px;
 }
 
 .box2 {
   background: #1aff1a;
+}
+
+.box3 {
+  border-radius: 50%;
+  height: 60px;
+  width: 120px;
+  font-size: 20px;
+  background: yellow;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }

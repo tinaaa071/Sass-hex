@@ -1,0 +1,52 @@
+@mixin blueSize {
+    color: blue;
+    font-size: 13px;
+}
+
+// 圖片取代文字
+@mixin hide-text {
+    text-indent: 110%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+// 
+@mixin color ($color, $size){
+    color: $color;
+    border: 5px solid $color;
+    text-decoration: $color;
+    font-size: $size * 1.5;
+}
+
+// 橢圓形
+@mixin circle ($size, $bgcolor){
+    border-radius: 50%;
+    height: $size;
+    width: $size*2;
+    font-size: $size/3;
+    background: $bgcolor;
+    // 垂直置中
+    display: flex;
+    align-items: center; 
+    // 水平置中
+    justify-content: center; 
+}
+
+// 響應式
+@mixin desktop-below {
+    @media (max-width: 1023px) {
+        @content
+    }
+}
+
+@mixin pad {
+    @media (max-width: 768px) {
+        @content
+    }
+}
+
+@mixin mobile {
+    @media (max-width: 568px) {
+        @content
+    }
+}
