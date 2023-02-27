@@ -1,6 +1,18 @@
 // 載入 _variable.scss
 @import "variable";
 @import "normalize";
+
+// 全站設定
 @import "base";
+// mixin
 @import "mixin";
+// 載入從 pure.css 下載的程式碼
+@import "modules/buttons-min";
+// 主要 css
 @import "main";
+// 細分佈局
+@import "layout";
+@import "index";
+@import "cart";
+
+@import "for";

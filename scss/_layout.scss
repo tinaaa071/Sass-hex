@@ -1,0 +1,39 @@
+.header {
+
+}
+
+.footer {
+
+}
+
+.l-list {
+    width: 500px;
+    font-size: 13px;
+}
+.l-list a {
+    
+}
+
+.list {
+    &__title {
+        width: 50px;
+    }
+    &__img {
+        height: 50px;
+        &--changeBg {
+            width: 50px;
+        }
+    }
+}
+
+.card {
+    &__body {
+        width: 500px;
+        &__title {
+            height: 50px;
+            &--active {
+                background: blue;
+            }
+        }
+    }
+}
